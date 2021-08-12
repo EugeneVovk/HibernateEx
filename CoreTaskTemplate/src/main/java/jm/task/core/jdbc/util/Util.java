@@ -16,12 +16,10 @@ public class Util {
     private static final String USERNAME = "root";
     private static final String PASSWORD = "root";
 
-
     public static Connection getConnection() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
         return DriverManager.getConnection(URL, USERNAME, PASSWORD);
     }
-
 
     /*
     public static SessionFactory createSessionFactory() {
